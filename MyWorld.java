@@ -20,7 +20,7 @@ public class MyWorld extends World
         
         super(1200, 800, 1); 
         messageBoard mb1 = new messageBoard();
-        mb1.setVisible = true, mb1.setLocation(10,20);
+        mb1.setLocation(10,20);
     }
     public void characterActions(){
         character.talkWith();
