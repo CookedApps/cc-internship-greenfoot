@@ -17,7 +17,7 @@ public class messageBoard extends Actor
      */
     public void act() 
     {
-       
+       messageBoard();
     }  
     public void printOut(){
         
