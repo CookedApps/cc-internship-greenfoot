@@ -8,7 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Character extends Actor
 {   
-    
+    String name;
+    public Character(String myName){
+        name = myName;
+        messageBoard messageboard = mb1();
+    }
     /**
      * Act - do whatever the Character wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -27,5 +31,11 @@ public class Character extends Actor
     }
     public void readMessage(){
         System.out.println("here we'll read the messages");
+    }
+    public void attack(){
+        System.out.println("here we'll attack");
+    }
+    public void runAway(){
+        System.out.println("here we'll run away");
     }
 }
