@@ -27,6 +27,8 @@ public class messageBoard extends Actor
                     getImage().drawString(toDraw,50,60);
                     this.getImage().setColor(Color.WHITE);
                     this.getImage().setFont(new Font("Verdana",false,false,25));
+                    
+                    
     }
     protected void addedToWorld(World world)
     {
@@ -35,4 +37,5 @@ public class messageBoard extends Actor
         world = getWorld();
 
     }
+
 }
