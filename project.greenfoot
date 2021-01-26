@@ -1,9 +1,17 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.messageBoard.image=board.jpg
 editor.fx.0.height=1056
 editor.fx.0.width=1936
 editor.fx.0.x=-8
 editor.fx.0.y=-8
+=======
+class.Character.image=Sans.png
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+>>>>>>> 2005aa631b19a3b54a280a7c153c37ec33e3c66a
 height=1056
 package.numDependencies=0
 package.numTargets=2
@@ -22,7 +30,11 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=messageBoard
+=======
+target1.name=Character
+>>>>>>> 2005aa631b19a3b54a280a7c153c37ec33e3c66a
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=100
