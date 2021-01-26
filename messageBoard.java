@@ -18,12 +18,17 @@ public class messageBoard extends Actor
      */
     public void act() 
     {
-       printOut("*insert Megalovania at this point");
+        
+        printOut("*insert Megalovania at this point");
     }
     public void giveOutStuff(String x){
         printOut(x);
     }
     public void printOut(String toDraw){
+               
+                    reload();
+                    
+                    getImage().drawString(toDraw,50,60);
                     getImage().drawString(toDraw,50,60);
                     this.getImage().setColor(Color.WHITE);
                     this.getImage().setFont(new Font("Verdana",false,false,25));
@@ -37,5 +42,8 @@ public class messageBoard extends Actor
         world = getWorld();
 
     }
-
+    public void reload(){
+        this.getImage().clear();
+        this.setImage("images/msgboard.png");
+    }
 }
