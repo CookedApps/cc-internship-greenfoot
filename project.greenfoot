@@ -10,11 +10,19 @@ dependency2.type=UsesDependency
 dependency3.from=Character
 dependency3.to=messageBoard
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=985
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=468
+editor.fx.0.y=178
+height=1056
+>>>>>>> 2f0a7159fb82e9ac07c71e881420aff20cd27506
 package.numDependencies=3
 package.numTargets=4
 project.charset=UTF-8
