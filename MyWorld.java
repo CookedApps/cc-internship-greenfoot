@@ -19,7 +19,7 @@ public class MyWorld extends World
         
         super(1200, 800, 1); 
         messageBoard mb1 = new messageBoard();
-        mb1.setLocation(10,20);
+        addObject(mb1, 584, 93);
         Character character = new Character();
     }
 }

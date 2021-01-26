@@ -18,10 +18,18 @@ public class messageBoard extends Actor
      */
     public void act() 
     {
-       printOut("meme");
+       printOut("*insert Megalovania at this point");
     }  
     public void printOut(String toDraw){
-                    getImage().drawString(toDraw,20,20);
+                    getImage().drawString(toDraw,50,60);
+                    this.getImage().setColor(Color.WHITE);
+                    this.getImage().setFont(new Font("Verdana",false,false,25));
     }
-    
+        protected void addedToWorld(World world)
+    {
+
+        setImage("images/msgboard.png");
+        world = getWorld();
+
+    }
 }
