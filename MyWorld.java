@@ -17,5 +17,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1); 
+        messageBoard mb1 = new messageBoard();
+        mb1.setVisible = true, mb1.setLocation(10,20);
     }
 }

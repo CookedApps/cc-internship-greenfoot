@@ -10,6 +10,7 @@ public class messageBoard extends Actor
 {
     public void messageBoard(){
             setImage("images/msgboard.png");
+
     }
     /**
      * Act - do whatever the messageBoard wants to do. This method is called whenever
@@ -17,10 +18,10 @@ public class messageBoard extends Actor
      */
     public void act() 
     {
-       
+       printOut("meme");
     }  
-    public void printOut(){
-        
+    public void printOut(String toDraw){
+                    getImage().drawString(toDraw,20,20);
     }
     
 }
