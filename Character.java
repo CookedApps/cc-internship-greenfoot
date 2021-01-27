@@ -20,13 +20,20 @@ public class Character extends Actor
      */
     public void act() 
     {
-        readMessage();
-        MyWorld.mb1.printOut("Hello, World");
-        
+        //readMessage();
+        //MyWorld.mb1.printOut("Hello, World");
+        walk();
         // Add your action code here.
     }   
     public void walk(){
-        System.out.println("here well walk");
+        if(Greenfoot.isKeyDown("left")){
+            setRotation(0);
+            move(5); 
+        }
+        else if(Greenfoot.isKeyDown("right")){
+            setRotation(0);
+            move(-5); 
+        }
     }
     public void talkWith(){
         System.out.println("here well have the talk with");

@@ -19,7 +19,7 @@ public class endboss extends Actor
         protected void addedToWorld(World world)
     {
 
-        setImage("images/hoffmann.png");
+        setImage("images/hoffmann.PNG");
         world = getWorld();
 
     }

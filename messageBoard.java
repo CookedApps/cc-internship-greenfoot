@@ -19,7 +19,7 @@ public class messageBoard extends Actor
     public void act() 
     {
         
-        printOut("*insert Megalovania at this point");
+        //printOut("*insert Megalovania at this point");
     }
     public void printOut(String toDraw){
                
