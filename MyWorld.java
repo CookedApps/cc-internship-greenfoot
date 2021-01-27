@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     public static messageBoard mb1;
+    public static soundPlayer spr;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -26,7 +27,9 @@ public class MyWorld extends World
         addObject(character, 890, 150);
         endboss eb = new endboss();
         addObject(eb, 900, 180);
-        soundPlayer sp = new soundPlayer();
-        addObject(sp, 900, 180);
+        spr = new soundPlayer();
+        addObject(spr, 900, 180);
+        speaker sp = new speaker();
+        addObject(sp, 1100, 50);
     }
 }

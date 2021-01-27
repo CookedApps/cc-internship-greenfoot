@@ -9,29 +9,34 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class soundPlayer extends Actor
 {
     boolean running = false;
+    boolean stop = true;
+    private GreenfootSound bossfight = new GreenfootSound("boss_battle_#2.mp3");
     /**
      * Act - do whatever the soundPlayer wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        if(running == false){
-        play("sounds/boss_battle_#2.mp3");
-     }
+       play("bossfight");
     }    
     
     public void play(String sound){
-        Greenfoot.playSound(sound);
-        running = true;
+        if(running == true && stop == true){
+          stopAll();
+        }
+        if(running == false && sound == "bossfight"){
+            bossfight.play();
+            running = true;
+        }
     }
-    public void stop(){
-        Greenfoot.stop();
+    public void stopAll(){
+        bossfight.stop();
         running = false;
     }
             protected void addedToWorld(World world)
     {
 
-        setImage("images/hoffmann.PNG");
+        setImage("images/void.PNG");
         world = getWorld();
 
     }
