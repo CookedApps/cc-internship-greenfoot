@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+    public static messageBoard mb1;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -19,9 +20,9 @@ public class MyWorld extends World
         
         super(1200, 800, 1); 
         setBackground("images/gras.jpg");
-        messageBoard mb1 = new messageBoard();
-        addObject(mb1, 589, 98);
+        mb1 = new messageBoard();
+        addObject(mb1, 589, 94);
         Character character = new Character("X");
-        addObject(character, 850, 150);
+        addObject(character, 890, 150);
     }
 }

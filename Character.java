@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Character extends Actor
 {   
     String name;
-    //messageBoard mb1;
+    messageBoard mb1;
     public Character(String myName){
         name = myName;
         setImage("images/man.png");
@@ -18,9 +18,10 @@ public class Character extends Actor
      * Act - do whatever the Character wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act(messageBoard mb1) 
+    public void act() 
     {
         readMessage();
+        MyWorld.mb1.printOut("Hello, World");
         
         // Add your action code here.
     }   
@@ -31,7 +32,7 @@ public class Character extends Actor
         System.out.println("here well have the talk with");
     }
     public void readMessage(){
-        mb1.printOut("This sign cant stop me because I cant read");
+        MyWorld.mb1.printOut("This sign cant stop me because I cant read");
     }
     public void attack(){
         System.out.println("here we'll attack");
