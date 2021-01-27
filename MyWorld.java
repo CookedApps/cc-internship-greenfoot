@@ -22,5 +22,6 @@ public class MyWorld extends World
         messageBoard mb1 = new messageBoard();
         addObject(mb1, 589, 98);
         Character character = new Character("X");
+        addObject(character, 850, 150);
     }
 }
