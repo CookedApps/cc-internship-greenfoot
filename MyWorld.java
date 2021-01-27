@@ -28,8 +28,7 @@ public class MyWorld extends World
         endboss eb = new endboss();
         addObject(eb, 900, 180);
         spr = new soundPlayer();
-        addObject(spr, 900, 180);
-        speaker sp = new speaker();
-        addObject(sp, 1100, 50);
+        addObject(spr, 1140, 24);
+
     }
 }

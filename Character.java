@@ -42,12 +42,12 @@ public class Character extends Actor
         if(Greenfoot.isKeyDown("down")){
             setRotation(0);
             setLocation(getX(), getY()+5); 
-            lr = 1;
+            
         }
         if(Greenfoot.isKeyDown("up") && getY() > 400){
             setRotation(0);
             setLocation(getX(), getY()-5); 
-            lr = 1;
+            
         }
         if(lr == 0 && llr != 0){
             getImage().mirrorHorizontally();

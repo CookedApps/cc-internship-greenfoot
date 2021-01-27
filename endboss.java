@@ -20,6 +20,7 @@ public class endboss extends Actor
     {
 
         setImage("images/hoffmann.PNG");
+        //visible = false;
         world = getWorld();
 
     }
