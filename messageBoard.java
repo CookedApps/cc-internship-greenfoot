@@ -28,11 +28,10 @@ public class messageBoard extends Actor
                
                     reload();
                     
-                    getImage().drawString(toDraw,50,60);
-                    getImage().drawString(toDraw,50,60);
+                    
                     this.getImage().setColor(Color.WHITE);
                     this.getImage().setFont(new Font("Verdana",false,false,25));
-                    
+                    getImage().drawString(toDraw,50,60);
                     
     }
     protected void addedToWorld(World world)
