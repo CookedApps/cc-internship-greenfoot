@@ -10,6 +10,8 @@ public class Character extends Actor
 {   
     String name;
     messageBoard mb1;
+    int lr = 0;
+    int llr= 0;
     public Character(String myName){
         name = myName;
         setImage("images/man.png");
@@ -26,13 +28,32 @@ public class Character extends Actor
         // Add your action code here.
     }   
     public void walk(){
-        if(Greenfoot.isKeyDown("left")){
+        llr = lr;
+        if(Greenfoot.isKeyDown("right")){
             setRotation(0);
             move(5); 
+            lr = 0;
         }
-        else if(Greenfoot.isKeyDown("right")){
+        if(Greenfoot.isKeyDown("left")){
             setRotation(0);
             move(-5); 
+            lr = 1;
+        }
+        if(Greenfoot.isKeyDown("down")){
+            setRotation(0);
+            setLocation(getX(), getY()+5); 
+            lr = 1;
+        }
+        if(Greenfoot.isKeyDown("up") && getY() > 400){
+            setRotation(0);
+            setLocation(getX(), getY()-5); 
+            lr = 1;
+        }
+        if(lr == 0 && llr != 0){
+            getImage().mirrorHorizontally();
+        }
+        else if(lr ==1 && llr != 1){
+            getImage().mirrorHorizontally();
         }
     }
     public void talkWith(){
