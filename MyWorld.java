@@ -24,5 +24,7 @@ public class MyWorld extends World
         addObject(mb1, 589, 94);
         Character character = new Character("X");
         addObject(character, 890, 150);
+        endboss eb = new endboss();
+        addObject(eb, 900, 180);
     }
 }
