@@ -11,10 +11,13 @@ public class Character extends Actor
     String name;
     messageBoard mb1;
     int lr = 0;
-    int llr= 0;
+    int llr = 0;
+    int homework = 0;
+    int newHomework = 0;
     public Character(String myName){
         name = myName;
-        setImage("images/man.png");
+        setImage("images/Sans.png");
+        
     }
     /**
      * Act - do whatever the Character wants to do. This method is called whenever
@@ -57,7 +60,9 @@ public class Character extends Actor
         }
     }
     public void talkWith(){
-        System.out.println("here well have the talk with");
+        MyWorld.mb1.printOut("Copying Homework.....finished");
+        newHomework = MyWorld.frnd1.giveHomework();
+        homework = homework + newHomework;
     }
     public void readMessage(){
         MyWorld.mb1.printOut("This sign cant stop me because I cant read");
