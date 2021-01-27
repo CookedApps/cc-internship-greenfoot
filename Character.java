@@ -9,10 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Character extends Actor
 {   
     String name;
-    messageBoard messageboard;
+    //messageBoard mb1;
     public Character(String myName){
         name = myName;
-
+        setImage("images/man.png");
     }
     /**
      * Act - do whatever the Character wants to do. This method is called whenever
@@ -20,7 +20,7 @@ public class Character extends Actor
      */
     public void act(messageBoard mb1) 
     {
-        messageboard = mb1;
+        readMessage();
         
         // Add your action code here.
     }   
@@ -31,7 +31,7 @@ public class Character extends Actor
         System.out.println("here well have the talk with");
     }
     public void readMessage(){
-        System.out.println("here we'll read the messages");
+        mb1.printOut("This sign cant stop me because I cant read");
     }
     public void attack(){
         System.out.println("here we'll attack");
