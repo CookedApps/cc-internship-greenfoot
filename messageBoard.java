@@ -10,7 +10,7 @@ public class messageBoard extends Actor
 {
     public void messageBoard(){
             setImage("images/msgboard.png");
-
+            //test
     }
     /**
      * Act - do whatever the messageBoard wants to do. This method is called whenever
