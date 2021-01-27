@@ -26,5 +26,7 @@ public class MyWorld extends World
         addObject(character, 890, 150);
         endboss eb = new endboss();
         addObject(eb, 900, 180);
+        soundPlayer sp = new soundPlayer();
+        addObject(sp, 900, 180);
     }
 }
