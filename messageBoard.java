@@ -52,9 +52,9 @@ public class messageBoard extends Actor
         String cTime = Integer.toString(time);
         getImage().drawString(cTime,50,90);
         if(i != duration){
-          displayCounter(time);  
+          displayCounter(time -1);  
         }
-    }*/
+    }
     protected void addedToWorld(World world)
     {
 
