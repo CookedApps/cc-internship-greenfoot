@@ -18,7 +18,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 1200x800 cells with a cell size of 1x1 pixels.
-        
+
         super(1200, 800, 1); 
         setBackground("images/gras.jpg");
         mb1 = new messageBoard();
@@ -29,8 +29,17 @@ public class MyWorld extends World
         addObject(eb, 900, 180);
         spr = new soundPlayer();
         addObject(spr, 1140, 24);
-        
-        startScreen sc = new startScreen();
-        addObject(sc, 600, 400);
+
+        //startScreen sc = new startScreen();
+        //addObject(sc, 600, 400);
+        prepare();
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
     }
 }

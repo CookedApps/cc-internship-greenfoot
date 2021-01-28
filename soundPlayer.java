@@ -11,33 +11,38 @@ public class soundPlayer extends Actor
     boolean running = false;
     boolean stop = true;
     boolean mute = false;
-    String toPlay = "bossfight";
+    boolean start = false;
+    String toPlay = "bgm";
+    String lastPlay = "bgm";
     private GreenfootSound bossfight = new GreenfootSound("boss_battle_#2.mp3");
     private GreenfootSound bgm = new GreenfootSound("background.mp3");
+    private GreenfootSound watzi = new GreenfootSound("watzlawek.mp3");
     /**
      * Act - do whatever the soundPlayer wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        toPlay = "bgm";
+        if(toPlay != lastPlay | start == false){
         if(running == false) play(toPlay);
-        if (Greenfoot.mouseClicked(this)) {
-            if(mute == true){
+        start = true;
+     }
+      if (Greenfoot.mouseClicked(this)) {
+        if(mute == true){
                 mute = false;
                 setImage("images/speaker_active.png");
                 play(toPlay);
-            }
-            else{
+          }
+          else{
               mute = true;
               setImage("images/speaker_inactive.png");
               stopAll();
-            }
-        }
+          }
+      }
     }    
     
     public void play(String sound){
-        
+        toPlay = "watzi";
         if(running == true && stop == true){
           stopAll();
         }
@@ -50,12 +55,16 @@ public class soundPlayer extends Actor
             bgm.playLoop();
             running = true;
         }
+        if(running == false && sound == "watzi"){
+            watzi.play();
+            running = true;
+        }
       }
     }
     public void stopAll(){
         bossfight.stop();
         bgm.stop();
-
+        watzi.stop();
         running = false;
     }
             protected void addedToWorld(World world)
