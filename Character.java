@@ -16,7 +16,7 @@ public class Character extends Actor
     int newHomework = 0;
     public Character(String myName){
         name = myName;
-        setImage("images/man.png");
+        setImage("images/Sans.png");
         
     }
     /**
