@@ -9,7 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Friends extends Actor
 {
     public Friends(){
-        setImage("images/Homework3.png");
+        //setImage("images/Homework3.png");
+        setImage("images/karnekiundha.png");
     }
     /**
      * Act - do whatever the Friends wants to do. This method is called whenever
