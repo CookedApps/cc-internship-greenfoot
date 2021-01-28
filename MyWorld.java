@@ -35,10 +35,10 @@ public class MyWorld extends World
         setWalls("right");
         setWalls("left");
         Wall topLWall = new Wall();
-        addObject(topLWall, 0, 361 );
-        topLWall.setRotation(-90);
         Wall topRWall = new Wall();
+        addObject(topLWall, 0, 361 );
         addObject(topRWall, 1200, 361 );
+        topLWall.setRotation(-90);
         topRWall.setRotation(-90);
         mb1 = new messageBoard();
         addObject(mb1, 589, 94);
@@ -101,43 +101,27 @@ public class MyWorld extends World
         wallarrsub[8] = wall8;
         wallarrsub[9] = wall9;
     }
-    public void trumpMethodLeft(){
-        Wall wall20 = new Wall();
-        Wall wall21 = new Wall();
-        Wall wall22 = new Wall();
-        Wall wall23 = new Wall();
-        Wall wall24 = new Wall();
-        Wall wall25 = new Wall();
-        Wall wall26 = new Wall();
-        Wall wall27 = new Wall();
-        Wall wall28 = new Wall();
-        Wall wall29 = new Wall();
-        
-        wallarrleft[0] = wall20;
-        wallarrleft[1] = wall21;
-        wallarrleft[2] = wall22;
-        wallarrleft[3] = wall23;
-
-
-       
-    }
     public void trumpMethodRight(){
         Wall wall10 = new Wall();
         Wall wall11 = new Wall();
         Wall wall12 = new Wall();
         Wall wall13 = new Wall();
-        Wall wall14 = new Wall();
-        Wall wall15 = new Wall();
-        Wall wall16 = new Wall();
-        Wall wall17 = new Wall();
-        Wall wall18 = new Wall();
-        Wall wall19 = new Wall();
         
         wallarrright[0] = wall10;
         wallarrright[1] = wall11;
         wallarrright[2] = wall12;
         wallarrright[3] = wall13;
-
-       
     } 
+    public void trumpMethodLeft(){
+        Wall wall14 = new Wall();
+        Wall wall15 = new Wall();
+        Wall wall16 = new Wall();
+        Wall wall17 = new Wall();
+
+        wallarrleft[0] = wall14;
+        wallarrleft[1] = wall15;
+        wallarrleft[2] = wall16;
+        wallarrleft[3] = wall17;
+    }
+    
 }
