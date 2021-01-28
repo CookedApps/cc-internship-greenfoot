@@ -9,6 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class messageBoard extends Actor
 {
     String lastDraw = "hello, world"; 
+        long h = 0;
+        int i = 0;
+        int time = 0;
     public void messageBoard(){
             setImage("images/msgboard.png");
             //test
@@ -32,15 +35,13 @@ public class messageBoard extends Actor
         getImage().drawString(toDraw,50,60);
                     
     }
-   /* public void displayCounter(int duration){
+    public void displayCounter(int duration){
         
         printOut(lastDraw);
         this.getImage().setColor(Color.WHITE);
         this.getImage().setFont(new Font("Verdana",false,false,25));
         long g = System.currentTimeMillis();
-        long h = 0;
-        int i = 0;
-        int time = 0;
+
         while (h != g + 1000){
             h = System.currentTimeMillis();
         }
