@@ -10,7 +10,7 @@ public class soundPlayer extends Actor
 {
     boolean running = false;
     boolean stop = true;
-    boolean mute = true;
+    boolean mute = false;
     boolean start = false;
     String toPlay = "bgm";
     String lastPlay = "bgm";

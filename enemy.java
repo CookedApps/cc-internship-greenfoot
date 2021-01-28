@@ -8,12 +8,30 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class enemy extends Actor
 {
+    String name = "";
+    soundPlayer spr;
+    boolean alrr = false;
     /**
      * Act - do whatever the enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        setImg();
+        playSong();
+    } 
+    public void enemy(){
+        name = "";
+    }
+    public void playSong(){
+      if(name == "nolde" && alrr == false){
+        MyWorld.spr.play("nolde");
+        alrr = true;
+    } 
+    }
+    public void setImg(){
+              if(name == "nolde"){
+        setImage("images/nolde.PNG");
+    }  
+    }
 }

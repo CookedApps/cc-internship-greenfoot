@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class endboss extends Actor
 {
+    soundPlayer spr;
     /**
      * Act - do whatever the endboss wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

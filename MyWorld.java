@@ -46,6 +46,10 @@ public class MyWorld extends World
         addObject(character, 1130, 705);
         //endboss eb = new endboss();
         //addObject(eb, 53, 482);
+        enemy nolde = new enemy();
+        addObject(nolde, 50, 500);
+        nolde.name="nolde";
+        nolde.setImg();
         spr = new soundPlayer();
         addObject(spr, 1140, 24);
         frnd1 = new Friends();
