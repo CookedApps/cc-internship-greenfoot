@@ -16,7 +16,7 @@ public class endboss extends Actor
     {
         // Add your action code here.
     } 
-        protected void addedToWorld(World world)
+    protected void addedToWorld(World world)
     {
 
         setImage("images/hoffmann.PNG");
