@@ -34,8 +34,8 @@ public class MyWorld extends World
         setWalls("sub");
         setWalls("right");
         setWalls("left");
-        wall_class cls = new wall_class();
-        addObject(cls, 600, 150);
+        //wall_class cls = new wall_class();
+        //addObject(cls, 600, 150);
         mb1 = new messageBoard();
         addObject(mb1, 589, 94);
         Character character = new Character("X");

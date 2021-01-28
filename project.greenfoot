@@ -1,7 +1,6 @@
 #Greenfoot project file
 class.Character.image=Sans.png
 class.messageBoard.image=board.jpg
-class.wall_class.image=class_wall.jpg
 dependency1.from=MyWorld
 dependency1.to=messageBoard
 dependency1.type=UsesDependency
