@@ -33,25 +33,24 @@ public class Character extends Actor
     }   
     public void walk(){
         llr = lr;
-        if(Greenfoot.isKeyDown("d") | Greenfoot.isKeyDown("right")){
+        if(Greenfoot.isKeyDown("d") | Greenfoot.isKeyDown("right")&& getX() < 1130){
             setRotation(0);
             move(5); 
             lr = 1;
         }
-        if(Greenfoot.isKeyDown("a") | Greenfoot.isKeyDown("left")){
+        if(Greenfoot.isKeyDown("a") | Greenfoot.isKeyDown("left") && getX() > 70){
             setRotation(0);
             move(-5); 
             lr = 0;
         }
-        if(Greenfoot.isKeyDown("s") | Greenfoot.isKeyDown("down")){
+        if(Greenfoot.isKeyDown("s") | Greenfoot.isKeyDown("down") && getY() < 705){
             setRotation(0);
             setLocation(getX(), getY()+5); 
             
         }
-        if(Greenfoot.isKeyDown("w") | Greenfoot.isKeyDown("up")  && getY() > 255){
+        if(Greenfoot.isKeyDown("w") | Greenfoot.isKeyDown("up") && getY() > 255){
             setRotation(0);
             setLocation(getX(), getY()-5); 
-            
         }
         if(lr == 0 && llr != 0){
             getImage().mirrorHorizontally();
@@ -77,4 +76,5 @@ public class Character extends Actor
     public void runAway(){
         System.out.println("here we'll run away");
     }
+    
 }
