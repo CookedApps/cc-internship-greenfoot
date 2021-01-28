@@ -26,6 +26,7 @@ public class messageBoard extends Actor
         //printOut("*insert Megalovania at this point");
     }
     public void printOut(String toDraw){
+        setImage("msgboard.png");
         lastDraw = toDraw;       
         reload();
                     
@@ -33,7 +34,6 @@ public class messageBoard extends Actor
         this.getImage().setColor(Color.WHITE);
         this.getImage().setFont(new Font("Verdana",false,false,25));
         getImage().drawString(toDraw,50,60);
-                    
     }
     public void displayCounter(int duration){
         
@@ -56,6 +56,7 @@ public class messageBoard extends Actor
           displayCounter(time -1);  
         }
     }
+
     protected void addedToWorld(World world)
     {
 

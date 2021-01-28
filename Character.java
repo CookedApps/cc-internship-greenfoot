@@ -33,22 +33,22 @@ public class Character extends Actor
     }   
     public void walk(){
         llr = lr;
-        if(Greenfoot.isKeyDown("d")){
+        if(Greenfoot.isKeyDown("d") | Greenfoot.isKeyDown("right")){
             setRotation(0);
             move(5); 
-            lr = 0;
-        }
-        if(Greenfoot.isKeyDown("a")){
-            setRotation(0);
-            move(-5); 
             lr = 1;
         }
-        if(Greenfoot.isKeyDown("s")){
+        if(Greenfoot.isKeyDown("a") | Greenfoot.isKeyDown("left")){
+            setRotation(0);
+            move(-5); 
+            lr = 0;
+        }
+        if(Greenfoot.isKeyDown("s") | Greenfoot.isKeyDown("down")){
             setRotation(0);
             setLocation(getX(), getY()+5); 
             
         }
-        if(Greenfoot.isKeyDown("w") && getY() > 400){
+        if(Greenfoot.isKeyDown("w") | Greenfoot.isKeyDown("up")  && getY() > 255){
             setRotation(0);
             setLocation(getX(), getY()-5); 
             
