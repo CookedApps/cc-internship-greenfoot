@@ -16,4 +16,4 @@ public class wall_class extends Actor
     {
         // Add your action code here.
     }    
-}
+}//
