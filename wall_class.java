@@ -15,5 +15,12 @@ public class wall_class extends Actor
     public void act() 
     {
         // Add your action code here.
-    }    
+    } 
+                protected void addedToWorld(World world)
+    {
+        
+        setImage("images/class_wall.jpg");
+        world = getWorld();
+
+    }
 }//
