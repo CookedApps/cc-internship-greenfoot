@@ -17,7 +17,7 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1200x800 cells with a cell size of 1x1 pixels.
         
         super(1200, 800, 1); 
         setBackground("images/gras.jpg");
@@ -29,6 +29,8 @@ public class MyWorld extends World
         addObject(eb, 900, 180);
         spr = new soundPlayer();
         addObject(spr, 1140, 24);
-
+        
+        startScreen sc = new startScreen();
+        addObject(sc, 600, 400);
     }
 }
