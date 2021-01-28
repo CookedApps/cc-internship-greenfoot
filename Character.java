@@ -16,7 +16,7 @@ public class Character extends Actor
     int newHomework = 0;
     public Character(String myName){
         name = myName;
-        setImage("images/Sans.png");
+        setImage("images/man.png");
         
     }
     /**
@@ -28,6 +28,7 @@ public class Character extends Actor
         //readMessage();
         //MyWorld.mb1.printOut("Hello, World");
         walk();
+        talkWith();
         // Add your action code here.
     }   
     public void walk(){
@@ -60,9 +61,12 @@ public class Character extends Actor
         }
     }
     public void talkWith(){
-        MyWorld.mb1.printOut("Copying Homework.....finished");
-        newHomework = MyWorld.frnd1.giveHomework();
-        homework = homework + newHomework;
+        if(Greenfoot.isKeyDown("h")){
+        
+            MyWorld.mb1.printOut("Copying Homework.....finished");
+            newHomework = MyWorld.frnd1.giveHomework();
+            homework = homework + newHomework;
+        }
     }
     public void readMessage(){
         MyWorld.mb1.printOut("This sign cant stop me because I cant read");
