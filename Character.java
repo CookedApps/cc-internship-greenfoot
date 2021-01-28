@@ -10,6 +10,7 @@ public class Character extends Actor
 {   
     String name;
     messageBoard mb1;
+    Friends frnd1;
     int lr = 0;
     int llr = 0;
     int homework = 0;
@@ -62,10 +63,14 @@ public class Character extends Actor
     }
     public void talkWith(){
         if(Greenfoot.isKeyDown("h")){
-        
+            
             MyWorld.mb1.printOut("Copying Homework.....finished");
+            System.out.println(homework + " "+ newHomework); //funktioniert
             newHomework = MyWorld.frnd1.giveHomework();
+            System.out.println(newHomework);
             homework = homework + newHomework;
+            System.out.println(newHomework);
+            System.out.println(homework);
         }
     }
     public void readMessage(){

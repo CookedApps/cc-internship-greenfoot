@@ -30,7 +30,7 @@ public class MyWorld extends World
         addObject(eb, 900, 180);
         spr = new soundPlayer();
         addObject(spr, 1140, 24);
-        Friends frnd1 = new Friends();
+        frnd1 = new Friends();
         addObject(frnd1, 100, 700);
         Wall wall = new Wall();
         addObject(wall, 800, 400);
