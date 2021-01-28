@@ -30,12 +30,16 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
         super(1200, 800, 1); 
-        setBackground("images/floor.png");
+        setBackground("images/class_wall.jpg");
         setWalls("sub");
         setWalls("right");
         setWalls("left");
-        wall_class cls = new wall_class();
-        addObject(cls, 600, 150);
+        Wall topLWall = new Wall();
+        addObject(topLWall, 0, 361 );
+        topLWall.setRotation(-90);
+        Wall topRWall = new Wall();
+        addObject(topRWall, 1200, 361 );
+        topRWall.setRotation(-90);
         mb1 = new messageBoard();
         addObject(mb1, 589, 94);
         Character character = new Character("X");
@@ -58,7 +62,7 @@ public class MyWorld extends World
             }
         }
         else if(x == "right"){
-            for(int i =0; i < 5; i++){
+            for(int i =0; i < 4; i++){
                 trumpMethodRight();
                 addObject(wallarrright[i], rposx, rposy);
                 wallarrright[i].setRotation(-90);
@@ -66,7 +70,7 @@ public class MyWorld extends World
             }
         }
         else if(x == "left"){
-            for(int i =0; i < 5; i++){
+            for(int i =0; i < 4; i++){
                 trumpMethodLeft();
                 addObject(wallarrleft[i], lposx, lposy);
                 wallarrleft[i].setRotation(-90);
@@ -113,12 +117,9 @@ public class MyWorld extends World
         wallarrleft[1] = wall21;
         wallarrleft[2] = wall22;
         wallarrleft[3] = wall23;
-        wallarrleft[4] = wall24;
-        wallarrleft[5] = wall25;
-        wallarrleft[6] = wall26;
-        wallarrleft[7] = wall27;
-        wallarrleft[8] = wall28;
-        wallarrleft[9] = wall29;
+
+
+       
     }
     public void trumpMethodRight(){
         Wall wall10 = new Wall();
@@ -136,11 +137,7 @@ public class MyWorld extends World
         wallarrright[1] = wall11;
         wallarrright[2] = wall12;
         wallarrright[3] = wall13;
-        wallarrright[4] = wall14;
-        wallarrright[5] = wall15;
-        wallarrright[6] = wall16;
-        wallarrright[7] = wall17;
-        wallarrright[8] = wall18;
-        wallarrright[9] = wall19;
+
+       
     } 
 }
