@@ -43,9 +43,9 @@ public class MyWorld extends World
         mb1 = new messageBoard();
         addObject(mb1, 589, 94);
         Character character = new Character("X");
-        addObject(character, 890, 600);
-        endboss eb = new endboss();
-        addObject(eb, 53, 482);
+        addObject(character, 1130, 705);
+        //endboss eb = new endboss();
+        //addObject(eb, 53, 482);
         spr = new soundPlayer();
         addObject(spr, 1140, 24);
         frnd1 = new Friends();
