@@ -28,11 +28,21 @@ public class Friends extends Actor
         myCoordsY = getY();
         playerCoordsX = MyWorld.character.getX();
         playerCoordsY = MyWorld.character.getY();
+        System.out.println("My Coords are: X: "+myCoordsX+" Y: "+myCoordsY);
+        System.out.println("Your Coords are: X: "+playerCoordsX+" Y: "+playerCoordsY);
+        giveHomework();
     } 
     public int giveHomework(){
-        for(int n = 0; n>50;n++){
-        if(myCoordsX == playerCoordsX -n | myCoordsX == playerCoordsX +n && myCoordsY == playerCoordsY -n | myCoordsY == playerCoordsY -n){
-        i = 1;
+        for(int n = 0; n>150;n++){
+        if(myCoordsX == playerCoordsX -n | myCoordsX == playerCoordsX +n){
+         for(int y = 0; y>150; y++){
+             if(myCoordsY == playerCoordsY +n | myCoordsY == playerCoordsY -n){
+                         System.out.println("Hi");
+               System.exit(0);
+               i = 1;
+                }
+            }
+
      }
     }
     return i;

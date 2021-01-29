@@ -62,8 +62,11 @@ public class Character extends Actor
     public void talkWith(){
         if(Greenfoot.isKeyDown("h")){
         
-            MyWorld.mb1.printOut("Copying Homework.....finished");
+            
             newHomework = MyWorld.frnd1.giveHomework();
+            if(newHomework >=1){
+               MyWorld.mb1.printOut("Copying Homework.....finished"); 
+            }
             homework = homework + newHomework;
         }
     }
