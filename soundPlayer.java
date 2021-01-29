@@ -59,7 +59,7 @@ public class soundPlayer extends Actor
         }
         if(mute != true){
         if(running == false && sound == "bossfight"){
-            bossfight.play();
+            bossfight.playLoop();
             running = true;
         }
         if(running == false && sound == "bgm"){
@@ -67,39 +67,39 @@ public class soundPlayer extends Actor
             running = true;
         }
         if(running == false && sound == "watzi"){
-            watzi.play();
+            watzi.playLoop();
             running = true;
         }
                 if(running == false && sound == "westerman"){
-            westerman.play();
+            westerman.playLoop();
             running = true;
         }
                 if(running == false && sound == "nolde"){
-            nolde.play();
+            nolde.playLoop();
             running = true;
         }
                 if(running == false && sound == "nagel"){
-            nagel.play();
+            nagel.playLoop();
             running = true;
         }
                 if(running == false && sound == "krey"){
-            krey.play();
+            krey.playLoop();
             running = true;
         }
                 if(running == false && sound == "euman"){
-            euman.play();
+            euman.playLoop();
             running = true;
         }
                         if(running == false && sound == "mergard"){
-            mergard.play();
+            mergard.playLoop();
             running = true;
         }
                         if(running == false && sound == "quadflieg"){
-            quadflieg.play();
+            quadflieg.playLoop();
             running = true;
         }
                         if(running == false && sound == "nachtkamp"){
-            nachtkamp.play();
+            nachtkamp.playLoop();
             running = true;
         }
       }

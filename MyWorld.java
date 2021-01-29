@@ -41,13 +41,13 @@ public class MyWorld extends World
         topLWall.setRotation(-90);
         topRWall.setRotation(-90);
         mb1 = new messageBoard();
-        addObject(mb1, 589, 94);
+        addObject(mb1, 600, 70);
         Character character = new Character("X");
         addObject(character, 1130, 705);
         //endboss eb = new endboss();
         //addObject(eb, 53, 482);
         enemy nolde = new enemy();
-        addObject(nolde, 50, 500);
+        addObject(nolde, 72, 500);
         nolde.name="nolde";
         nolde.setImg();
         spr = new soundPlayer();
