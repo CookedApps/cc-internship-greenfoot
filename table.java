@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class table extends Actor
 {
+    public table(){
+        setImage("images/Table.png");
+    }
     /**
      * Act - do whatever the table wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,5 +18,6 @@ public class table extends Actor
     public void act() 
     {
         // Add your action code here.
-    }    
+    }   
+    
 }

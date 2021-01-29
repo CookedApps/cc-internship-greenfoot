@@ -55,7 +55,8 @@ public class MyWorld extends World
         frnd1 = new Friends();
         addObject(frnd1, 100, 600);
         //walls -----------------------------------------------
-
+        table table1 = new table();
+        addObject(table1, 500, 500);
     }
     public void setWalls(String x){
         if(x == "sub"){

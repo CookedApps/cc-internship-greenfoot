@@ -30,6 +30,8 @@ public class Character extends Actor
         walk();
         talkWith();
         // Add your action code here.
+        setLocationtable(getX(),getY());
+        setLocationchair(getX(),getY());
     }   
     public void walk(){
         llr = lr;
@@ -76,5 +78,15 @@ public class Character extends Actor
     public void runAway(){
         System.out.println("here we'll run away");
     }
-    
+    public void setLocationtable(int x, int y){
+        if (getWorld().getObjectsAt(x, y, table.class).isEmpty()){
+            super.setLocation(x, y);
+        }
+       
+    }
+    public void setLocationchair(int x, int y){
+        if (getWorld().getObjectsAt(x, y, chair.class).isEmpty()){
+            super.setLocation(x, y);
+        }
+    }
 }
