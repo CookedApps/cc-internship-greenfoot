@@ -32,14 +32,14 @@ public class messageBoard extends Actor
                     
                     
         this.getImage().setColor(Color.WHITE);
-        this.getImage().setFont(new Font("Verdana",false,false,25));
+        this.getImage().setFont(new Font("Verdana",false,false,20));
         getImage().drawString(toDraw,40,60);
     }
     public void displayCounter(int duration){
         
         printOut(lastDraw);
         this.getImage().setColor(Color.WHITE);
-        this.getImage().setFont(new Font("Verdana",false,false,25));
+        this.getImage().setFont(new Font("Verdana",false,false,20));
         long g = System.currentTimeMillis();
 
         while (h != g + 1000){

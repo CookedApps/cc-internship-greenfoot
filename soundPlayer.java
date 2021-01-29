@@ -53,7 +53,7 @@ public class soundPlayer extends Actor
     }    
     
     public void play(String sound){
-        
+        toPlay = sound;
         if(running == true){
           stopAll();
         }
