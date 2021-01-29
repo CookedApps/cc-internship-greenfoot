@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class table extends Actor
 {
     public table(){
-        setImage("images/Table.png");
+        setImage("images/table1.png");
     }
     /**
      * Act - do whatever the table wants to do. This method is called whenever

@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class chair extends Actor
 {
     public chair(){
-        setImage("images/chair.png");
+        setImage("images/chair1.png");
     }
     /**
      * Act - do whatever the chair wants to do. This method is called whenever

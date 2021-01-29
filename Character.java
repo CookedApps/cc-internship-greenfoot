@@ -10,6 +10,8 @@ public class Character extends Actor
 {   
     String name;
     messageBoard mb1;
+    chair chair1;
+    table table1;
     int lr = 0;
     int llr = 0;
     int homework = 0;
@@ -30,8 +32,8 @@ public class Character extends Actor
         walk();
         talkWith();
         // Add your action code here.
-        setLocationtable(getX(),getY());
-        setLocationchair(getX(),getY());
+        //setLocationtable(getX(),getY());
+        //setLocationchair(getX(),getY());
     }   
     public void walk(){
         llr = lr;
@@ -78,15 +80,15 @@ public class Character extends Actor
     public void runAway(){
         System.out.println("here we'll run away");
     }
-    public void setLocationtable(int x, int y){
-        if (getWorld().getObjectsAt(x, y, table.class).isEmpty()){
+    public void setLocation(int x, int y){
+        if (getWorld().getObjectsAt(x, y, table.class).isEmpty()&& getWorld().getObjectsAt(x, y, chair.class).isEmpty()){
             super.setLocation(x, y);
         }
        
     }
-    public void setLocationchair(int x, int y){
+    /*public void setLocationchair(int x, int y){
         if (getWorld().getObjectsAt(x, y, chair.class).isEmpty()){
             super.setLocation(x, y);
         }
-    }
+    }*/
 }
