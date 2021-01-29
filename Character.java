@@ -70,8 +70,8 @@ public class Character extends Actor
     public void readMessage(){
         MyWorld.mb1.printOut("This sign cant stop me because I cant read");
     }
-    public void attack(){
-        System.out.println("here we'll attack");
+    public void giveHW(){
+        
     }
     public void runAway(){
         System.out.println("here we'll run away");
