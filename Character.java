@@ -73,8 +73,16 @@ public class Character extends Actor
     public void readMessage(){
         MyWorld.mb1.printOut("This sign cant stop me because I cant read");
     }
-    public void giveHW(){
-        
+    public void giveHomework(){
+        if(Greenfoot.isKeyDown("q")){
+            if(homework > 0){
+                homework = homework - 1;
+                MyWorld.mb1.printOut("level geschafft - lol");
+            }
+            else{
+                MyWorld.mb1.printOut("Wo sind deine Hausaufgaben?");
+            }
+        }
     }
     public void runAway(){
         System.out.println("here we'll run away");
