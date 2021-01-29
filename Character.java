@@ -12,12 +12,12 @@ public class Character extends Actor
     messageBoard mb1;
     int lr = 0;
     int llr = 0;
-    int homework = 0;
+    int homework;
     int newHomework = 0;
     public Character(String myName){
         name = myName;
         setImage("images/Sans.png");
-        
+        homework = 0;
     }
     /**
      * Act - do whatever the Character wants to do. This method is called whenever
@@ -29,6 +29,7 @@ public class Character extends Actor
         //MyWorld.mb1.printOut("Hello, World");
         walk();
         talkWith();
+        giveHomework();//diese beiden werden auf einen knopfdruck mehrfach ausgeführt
         // Add your action code here.
     }   
     public void walk(){
@@ -63,15 +64,29 @@ public class Character extends Actor
         if(Greenfoot.isKeyDown("h")){
         
             MyWorld.mb1.printOut("Copying Homework.....finished");
-            newHomework = MyWorld.frnd1.giveHomework();
-            homework = homework + newHomework;
+            
+            if(homework == 0){
+                newHomework = MyWorld.frnd1.giveHomework();
+                homework = homework + newHomework;
+            }
+            else if(homework == 1){
+                MyWorld.mb1.printOut("Du kannst nicht mehr machen als verlangt");
+            }
         }
     }
     public void readMessage(){
         MyWorld.mb1.printOut("This sign cant stop me because I cant read");
     }
-    public void attack(){
-        System.out.println("here we'll attack");
+    public void giveHomework(){
+        if(Greenfoot.isKeyDown("q")){
+            if(homework > 0){
+                homework = homework - 1;
+                MyWorld.mb1.printOut("level geschafft - lol");
+            }
+            else{
+                MyWorld.mb1.printOut("Wo sind deine Hausaufgaben?");
+            }
+        }
     }
     public void runAway(){
         System.out.println("here we'll run away");
