@@ -29,6 +29,7 @@ public class Character extends Actor
         //MyWorld.mb1.printOut("Hello, World");
         walk();
         talkWith();
+        giveHomework();
         // Add your action code here.
     }   
     public void walk(){
