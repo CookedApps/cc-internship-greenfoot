@@ -8,6 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Friends extends Actor
 {
+    Character character;
+    int myCoordsX;
+    int myCoordsY; 
+    int playerCoordsX;
+    int playerCoordsY;
+    int i;
     public Friends(){
         //setImage("images/Homework3.png");
         setImage("images/karnekiundha.png");
@@ -18,9 +24,27 @@ public class Friends extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        myCoordsX = getX();
+        myCoordsY = getY();
+        playerCoordsX = MyWorld.character.getX();
+        playerCoordsY = MyWorld.character.getY();
+        System.out.println("My Coords are: X: "+myCoordsX+" Y: "+myCoordsY);
+        System.out.println("Your Coords are: X: "+playerCoordsX+" Y: "+playerCoordsY);
+        //giveHomework();
     } 
     public int giveHomework(){
-       return 1; 
-    }   
+        /* for(int n = 0; n>150;n++){
+        if(myCoordsX == playerCoordsX -n | myCoordsX == playerCoordsX +n){
+         for(int y = 0; y>150; y++){
+             if(myCoordsY == playerCoordsY +n | myCoordsY == playerCoordsY -n){*/
+                         System.out.println("Hi");
+               System.exit(0);
+               i = 1;
+              /*  }
+            }
+
+     }
+    }*/
+    return i;
+ }
 }

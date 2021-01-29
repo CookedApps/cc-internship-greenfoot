@@ -12,6 +12,7 @@ public class MyWorld extends World
     public static soundPlayer spr;
     public static Friends frnd1;
     public static Wall wall;
+    public static Character character;
     Wall[] wallarrsub = new Wall[11];
     Wall[] wallarrright = new Wall[10];
     Wall[] wallarrleft = new Wall[10];
@@ -42,7 +43,7 @@ public class MyWorld extends World
         topRWall.setRotation(-90);
         mb1 = new messageBoard();
         addObject(mb1, 600, 70);
-        Character character = new Character("X");
+        character = new Character("X");
         addObject(character, 1130, 705);
         //endboss eb = new endboss();
         //addObject(eb, 53, 482);
