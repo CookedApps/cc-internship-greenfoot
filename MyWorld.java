@@ -22,6 +22,7 @@ public class MyWorld extends World
     int rposy = 800;
     int lposx = 0;
     int lposy = 800;
+    int m = 0;
     /**
      * Constructor for objects of class MyWorld.
      * 
