@@ -28,8 +28,8 @@ public class Friends extends Actor
         myCoordsY = getY();
         playerCoordsX = MyWorld.character.getX();
         playerCoordsY = MyWorld.character.getY();
-        System.out.println("My Coords are: X: "+myCoordsX+" Y: "+myCoordsY);
-        System.out.println("Your Coords are: X: "+playerCoordsX+" Y: "+playerCoordsY);
+        //System.out.println("My Coords are: X: "+myCoordsX+" Y: "+myCoordsY);
+        //System.out.println("Your Coords are: X: "+playerCoordsX+" Y: "+playerCoordsY);
         //giveHomework();
     } 
     public int giveHomework(){

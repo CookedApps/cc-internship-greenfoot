@@ -88,5 +88,9 @@ public class Character extends Actor
     public void runAway(){
         System.out.println("here we'll run away");
     }
-    
+    public void setLocation(int x, int y){
+        if (getWorld().getObjectsAt(x, y, table.class).isEmpty() && getWorld().getObjectsAt(x, y, chair.class).isEmpty()){
+            super.setLocation(x, y);
+        }
+    }
 }
