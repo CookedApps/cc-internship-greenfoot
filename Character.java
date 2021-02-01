@@ -14,6 +14,7 @@ public class Character extends Actor
     int llr = 0;
     int homework = 0;
     int newHomework = 0;
+    boolean givenHW = false;
     public Character(String myName){
         name = myName;
         setImage("images/Sans.png");
@@ -75,10 +76,13 @@ public class Character extends Actor
         MyWorld.mb1.printOut("This sign cant stop me because I cant read");
     }
     public void giveHomework(){
-        if(Greenfoot.isKeyDown("q")){
+        if(Greenfoot.isKeyDown("g") && givenHW==false){
             if(homework > 0){
                 homework = homework - 1;
                 MyWorld.mb1.printOut("level geschafft - lol");
+                if(homework == 0){
+                    givenHW=true;
+                }
             }
             else{
                 MyWorld.mb1.printOut("Wo sind deine Hausaufgaben?");

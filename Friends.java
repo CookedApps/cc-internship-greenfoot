@@ -38,7 +38,7 @@ public class Friends extends Actor
          for(int y = 0; y>150; y++){
              if(myCoordsY == playerCoordsY +n | myCoordsY == playerCoordsY -n){*/
                          System.out.println("Hi");
-               System.exit(0);
+              // System.exit(0);
                i = 1;
               /*  }
             }
