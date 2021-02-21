@@ -12,7 +12,7 @@ public class MyWorld extends World
     public static soundPlayer spr;
     public static Friends frnd1;
     public static Wall wall;
-    public static Character character;
+    
     Wall[] wallarrsub = new Wall[11];
     Wall[] wallarrright = new Wall[10];
     Wall[] wallarrleft = new Wall[10];
@@ -22,6 +22,7 @@ public class MyWorld extends World
     int rposy = 800;
     int lposx = 0;
     int lposy = 800;
+    public static Character character;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -43,8 +44,7 @@ public class MyWorld extends World
         topRWall.setRotation(-90);
         mb1 = new messageBoard();
         addObject(mb1, 600, 70);
-        character = new Character("X");
-        addObject(character, 1130, 705);
+
         //endboss eb = new endboss();
         //addObject(eb, 53, 482);
         enemy nolde = new enemy();
@@ -64,6 +64,8 @@ public class MyWorld extends World
         addObject(table2, 500, 600);
         chair chair2 = new chair();
         addObject(chair2, 390, 600);
+                character = new Character("X");
+        addObject(character, 1130, 705);
     }
     public void setWalls(String x){
         if(x == "sub"){
